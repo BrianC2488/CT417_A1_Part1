@@ -14,7 +14,7 @@ import org.joda.time.LocalDate;
 
 public class course_program 
 {
-        private String CourseName;
+    private String CourseName;
     private ArrayList moduleList;
     private LocalDate startDate; 
     private LocalDate endDate;
@@ -26,7 +26,7 @@ public class course_program
         this.endDate = end;
     }
     
-       
+   
        
    public String getCourseName() {
         return CourseName;
@@ -59,5 +59,9 @@ public class course_program
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     } 
+    public String getinfo()
+    {
+        return null; 
+    }
 
 }

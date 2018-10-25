@@ -13,7 +13,7 @@ import java.util.ArrayList;
 
 public class module 
 {
-     private String Name;
+    private String Name;
     private String ID;
     private ArrayList StudentList;
     

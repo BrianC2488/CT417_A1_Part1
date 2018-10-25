@@ -11,7 +11,7 @@ package com.brian.coughlan.ct417_a1_part1;
  */
 public class student 
 {
-     private String Name;
+    private String Name;
     private int Age;
     private String DOB;
     private String Username;
