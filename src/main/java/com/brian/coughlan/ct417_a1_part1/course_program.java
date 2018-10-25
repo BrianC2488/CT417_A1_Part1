@@ -24,7 +24,7 @@ public class course_program
         this.moduleList = moduleList;
         this.startDate = start;
         this.endDate = end;
-    }
+}
     
    
        
@@ -59,28 +59,5 @@ public class course_program
     public void setEndDate(LocalDate endDate) {
         this.endDate = endDate;
     } 
-   public void printStudents(){
-        ArrayList<student> CourseStudents = new ArrayList<student>();
-        
-        ArrayList<module> modules = new ArrayList<module>();
-        modules = this.getModuleList();
-        for (int i=0 ; i<modules.size() ; i++){
-            module m = modules.get(i);
-            ArrayList<student> ModuleStudents = new ArrayList<student>();
-            ModuleStudents = m.getStudentList();
-            for (int j=0 ; j<ModuleStudents.size();j++){
-                student s = ModuleStudents.get(j);
-                if (s.getCourse().equals(this.getCourseName()) && !(CourseStudents.contains(s))){
-                    CourseStudents.add(s);
-                    System.out.println(s.getName() + "\t Course: " + s.getCourse());
-                    System.out.print("\t Modules: ");
-                    for(int k=0; k<modules.size();k++){
-                        System.out.print(modules.get(k).getName() + " -- ");
-                    }
-                    System.out.println();
-                }
-            }
-        }
-   }
-
 }
+
